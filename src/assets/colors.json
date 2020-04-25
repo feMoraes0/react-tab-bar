@@ -1,0 +1,46 @@
+{
+  "light-theme": [
+    {
+      "bodyBg": "#8969FD",
+      "elementTxt": "#8A75E5",
+      "elementBg": "#E7E1FE"
+    },
+    {
+      "bodyBg": "#ED775E",
+      "elementTxt": "#E97E69",
+      "elementBg": "#FBE9E6"
+    },
+    {
+      "bodyBg": "#5BCBFB",
+      "elementTxt": "#68CBF5",
+      "elementBg": "#E4F7FE"
+    },
+    {
+      "bodyBg": "#F7BC33",
+      "elementTxt": "#F7C036",
+      "elementBg": "#FEF2DC"
+    }
+  ],
+  "dark-theme": [
+    {
+      "bodyBg": "#8969FD",
+      "elementTxt": "#E7E1FE",
+      "elementBg": "#8A75E5"
+    },
+    {
+      "bodyBg": "#ED775E",
+      "elementTxt": "#FBE9E6",
+      "elementBg": "#E97E69"
+    },
+    {
+      "bodyBg": "#5BCBFB",
+      "elementTxt": "#E4F7FE",
+      "elementBg": "#68CBF5"
+    },
+    {
+      "bodyBg": "#F7BC33",
+      "elementTxt": "#FEF2DC",
+      "elementBg": "#F7C036"
+    }
+  ]
+}
