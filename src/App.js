@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { FiHome, FiUser, FiMessageCircle, FiHeart } from 'react-icons/fi'
-import elements from './assets/colors.json';
+import colors from './assets/colors.json';
 
 function App() {
   const [ currentElement, setCurrentElement ] = useState(0);
@@ -9,7 +9,7 @@ function App() {
   const root = document.documentElement;
 
   useEffect(() => {
-    const colorThemes = elements[theme][currentElement];
+    const colorThemes = colors[theme][currentElement];
     Object.keys(colorThemes).map((element) => {
       root.style.setProperty(`--${element}`, colorThemes[element]);
       return undefined;
@@ -47,7 +47,7 @@ function App() {
       <div className='app-bar'>
         <button
           type='button'
-          className={(currentElement === 0) ? 'app-bar-item active' : 'app-bar-item' }
+          className={`app-bar-item ${(currentElement === 0) ? 'active' : ''}` }
           onClick={() => setCurrentElement(0)}
         >
           <FiHome size={25} />
@@ -56,16 +56,16 @@ function App() {
         
         <button
           type='button'
-          className={(currentElement === 1) ? 'app-bar-item active' : 'app-bar-item' }
+          className={`app-bar-item ${(currentElement === 1) ? 'active' : ''}` }
           onClick={() => setCurrentElement(1)}
         >
           <FiMessageCircle size={25} />
-          <span> Chat </span>
+          <span>Chat</span>
         </button>
         
         <button
           type='button'
-          className={(currentElement === 2) ? 'app-bar-item active' : 'app-bar-item' }
+          className={`app-bar-item ${(currentElement === 2) ? 'active' : ''}` }
           onClick={() => setCurrentElement(2)}
         >
           <FiHeart size={25} />
@@ -74,7 +74,7 @@ function App() {
         
         <button
           type='button'
-          className={(currentElement === 3) ? 'app-bar-item active' : 'app-bar-item' }
+          className={`app-bar-item ${(currentElement === 3) ? 'active' : ''}` }
           onClick={() => setCurrentElement(3)}
         >
           <FiUser size={25} />
