@@ -23,22 +23,22 @@
   ],
   "dark-theme": [
     {
-      "bodyBg": "#8969FD",
+      "bodyBg": "#523F97",
       "elementTxt": "#E7E1FE",
       "elementBg": "#8A75E5"
     },
     {
-      "bodyBg": "#ED775E",
+      "bodyBg": "#8E4738",
       "elementTxt": "#FBE9E6",
       "elementBg": "#E97E69"
     },
     {
-      "bodyBg": "#5BCBFB",
+      "bodyBg": "#367996",
       "elementTxt": "#E4F7FE",
       "elementBg": "#68CBF5"
     },
     {
-      "bodyBg": "#F7BC33",
+      "bodyBg": "#c59628",
       "elementTxt": "#FEF2DC",
       "elementBg": "#F7C036"
     }
