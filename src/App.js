@@ -27,17 +27,25 @@ function App() {
     },
   ];
 
-  function defineCurrent(elementNumber) {
-    setCurrentElement(elementNumber);
+  function changeToggle() {
+    console.log('entrou');
+    const slider = document.querySelector('span.slider-round');
+    if(slider.style.right === '0%')
+      slider.style.right = '50%';
+    else
+      slider.style.right ='0%';
   }
 
   return (
     <div className="app-container" style={{ backgroundColor: elements[currentElement].bgPage }}>
+      <button className='switch' onClick={changeToggle}>
+        <span className='slider-round'></span>
+      </button>
       <div className='app-bar'>
         <button
           type='button'
           className={(currentElement === 0) ? 'app-bar-item active' : 'app-bar-item' }
-          onClick={() => defineCurrent(0)}
+          onClick={() => setCurrentElement(0)}
           style={{ backgroundColor: (currentElement === 0) ? elements[currentElement].bgButton : 'transparent' }}
         >
           <FiHome
@@ -54,7 +62,7 @@ function App() {
         <button
           type='button'
           className={(currentElement === 1) ? 'app-bar-item active' : 'app-bar-item' }
-          onClick={() => defineCurrent(1)}
+          onClick={() => setCurrentElement(1)}
           style={{backgroundColor: (currentElement === 1) ? elements[currentElement].bgButton : 'transparent'}}
         >
           <FiMessageCircle
@@ -71,7 +79,7 @@ function App() {
         <button
           type='button'
           className={(currentElement === 2) ? 'app-bar-item active' : 'app-bar-item' }
-          onClick={() => defineCurrent(2)}
+          onClick={() => setCurrentElement(2)}
           style={{backgroundColor: (currentElement === 2) ? elements[currentElement].bgButton : 'transparent'}}
         >
           <FiHeart
@@ -88,7 +96,7 @@ function App() {
         <button
           type='button'
           className={(currentElement === 3) ? 'app-bar-item active' : 'app-bar-item' }
-          onClick={() => defineCurrent(3)}
+          onClick={() => setCurrentElement(3)}
           style={{backgroundColor: (currentElement === 3) ? elements[currentElement].bgButton : 'transparent'}}
         >
           <FiUser

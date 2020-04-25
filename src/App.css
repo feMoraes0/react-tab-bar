@@ -61,3 +61,27 @@ button:focus {
 .active svg {
   margin-right: 10px;
 }
+
+
+button.switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  background-color: #ffffff;
+  height: 30px;
+  width: 60px;
+  border-radius: 30px;
+}
+
+button.switch span.slider-round {
+  height: 20px;
+  width: 20px;
+  background-color: #282c34;
+  position: absolute;
+  border-radius: 100%;
+  right: 50%;
+  top: 0%;
+  margin: 5px;
+  transition: right 500ms;
+}
