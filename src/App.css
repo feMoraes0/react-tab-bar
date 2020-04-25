@@ -34,7 +34,7 @@ button:focus {
   flex-direction: row;
   align-items: center;
   transition: all 500ms;
-  width: 80px;
+  width: 75px;
 }
 
 .app-bar-item svg {
@@ -45,7 +45,7 @@ button:focus {
   opacity: 0;
   width: 0;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   transition: all 500ms;
 }
 
